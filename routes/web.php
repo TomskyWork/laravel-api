@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\Profile;
+use \App\Http\Controllers\AwesomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('profiles', [Profile::class,"list"]);
+
+Route::get('awesome', [AwesomeController::class,"doAwesome"]);
